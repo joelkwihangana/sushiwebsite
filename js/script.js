@@ -56,3 +56,13 @@ const cards = [
     price: "$21.00",
   },
 ];
+
+// hambaga
+// Get references to the menu elements
+const mobileMenu = document.getElementById("mobile-menu");
+const headerMenu = document.querySelector(".header__menu");
+
+// Add a click event listener to the mobile menu icon
+mobileMenu.addEventListener("click", () => {
+  headerMenu.classList.toggle("active");
+});

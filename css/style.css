@@ -94,6 +94,26 @@ a {
   margin: 32px 0px;
 }
 
+
+/* hambaga */
+.header__menu.active {
+  display: block;
+  animation: slideDown 0.3s ease forwards;
+}
+
+/* Slide-down animation keyframes */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* hambaga ends */
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .sushi__hide-scrollbar::-webkit-scrollbar {
   display: none;
@@ -129,7 +149,21 @@ a {
   .about-us__image {
     flex-direction: column;
   }
-
+.header__logo{
+  align-items: center;
+}
+.header__nav{
+  display: block;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+}
+.header__menu li a{
+  text-transform: capitalize;
+  color: #fff;
+  opacity: 0.7;
+}
   .about-us__image-sushi3 {
     border-bottom: 8px solid var(--color-creamson);
     border-right: none;
